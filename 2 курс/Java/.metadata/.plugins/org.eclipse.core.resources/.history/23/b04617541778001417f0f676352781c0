@@ -1,0 +1,21 @@
+package ru.javanfc2d;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+
+public class AudioThread implements Runnable {
+
+
+	public void run() {
+		try {
+		Player	p = new Player (new FileInputStream(getClass().getClassLoader().getResource("Hush - Fired Up - Need for Speed Most Wanted Soundtrack - 1080p").getPath()));
+		p.play();
+		} catch (FileNotFoundException | JavaLayerException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

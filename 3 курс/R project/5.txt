@@ -1,0 +1,45 @@
+avg <- function(set)
+  sum(set)/length(set)
+
+sdis <- function(set) {
+  avg <- avg(set)
+  sum <- 0
+  for (i in 1:length(set))
+    sum <- sum + (set[i] - avg)^2
+  sum/length(set)
+}
+
+dostuf <- function(n,M) {
+  ssum <- 0
+  qssum <- 0
+  for (i in 1:M) {
+    set <- rnorm(n,0,1)
+    sdis <- sdis(set)
+    ssum <- ssum + sdis
+    qssum <- qssum + sdis^2
+  }
+  c(ssum/M, qssum/M)
+}
+
+n <- c(5,10,15,20,40,100)
+M <- 1000
+
+n5 <- dostuf(n[1], M)
+n5 <- c(n5, n5[2] - n5[1]^2)
+n10 <- dostuf(n[2], M)
+n10 <- c(n10, n10[2] - n10[1]^2)
+n15 <- dostuf(n[3], M)
+n15 <- c(n15, n15[2] - n15[1]^2)
+n20 <- dostuf(n[4], M)
+n20 <- c(n20, n20[2] - n20[1]^2)
+n40 <- dostuf(n[5], M)
+n40 <- c(n40, n40[2] - n40[1]^2)
+n100 <- dostuf(n[6], M)
+n100 <- c(n100, n100[2] - n100[1]^2)
+
+n5
+n10
+n15
+n20
+n40
+n100

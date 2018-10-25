@@ -1,0 +1,112 @@
+f0 <- function(x) {
+	erf(x/sqrt(2))/2
+}
+
+Fn <- function(set, x) {
+	sum <- 0
+	for (i in 1:length(set))
+		if (x - set[i] >= 0)
+			sum <- sum + 1
+	sum/length(set)
+}
+
+com_dis <- function(x)
+	integrate(function(t) exp(-t^2/2), -Inf, x)$value/sqrt(2*pi)
+
+prob_dis <- function(x)
+	exp(-x^2/2)/sqrt(2*pi)
+
+
+to_com_dis <- function(x, set) {
+	Fn(set,x)
+}
+
+dostuffX <- function(set, num) {
+	mean <- mean(set)
+	s <- sd(set)
+	pk <- c()
+	nk <- c()
+	yk <- c()
+	xk <- c()
+	k <- 1
+	cat("left \t\t right \t\t ni \t pi \t\t n*pi \t\t ni-n*pi \t Xi^2\n")
+	repeat {
+		left <- min(set) + (max(set) - min(set))/num * (k - 1)
+		if (k == 1)
+			left <- -Inf
+		right <- min(set) + (max(set) - min(set))/num * (k)
+		range <- (set >= left & set < right)
+		if (k == num) {
+			right <- Inf
+			range <- (set >= left & set <= right)
+		}
+		kset <- c()
+		for (i in 1:length(set)) {
+			if (range[i])
+				kset <- c(kset, set[i])
+		}
+		yk <- c(yk, length(kset))
+		xk <- c(xk, ((if (left == -Inf) (right - (max(set) - min(set))/num) else left) + (if (right == Inf) (left + (max(set) - min(set))/num) else right))/2)
+		while (((f0((right-mean)/s) - f0((left-mean)/s))*length(set)) < 5 && k < num) {
+			cat(k, "U", k + 1, "\n")
+			k <- k + 1
+			tmpleft <- (min(set) + (max(set) - min(set))/num * (k - 1))
+			right <- min(set) + (max(set) - min(set))/num * (k)
+			range <- (set >= tmpleft & set < right)
+			if (k == num) {
+				right <- Inf
+				range <- (set >= tmpleft & set <= right)
+			}
+			for (i in 1:length(set)) {
+			if (range[i])
+					kset <- c(kset, set[i])
+			}
+		}
+		if (((f0((right-mean)/s) - f0((left-mean)/s))*length(set)) < 5 && k == num) {
+			cat(k - 1, "U", k, " upper line useless\n")
+			left <- min(set) + (max(set) - min(set))/num * (k - 2)
+			tmpright <- (min(set) + (max(set) - min(set))/num * (k - 1))
+			range <- (set >= left & set <= tmpright)
+			for (i in 1:length(set)) {
+			if (range[i])
+				kset <- c(kset, set[i])			
+			}
+		pk[length(pk)] <- f0((right-mean)/s) - f0((left-mean)/s)
+		nk[length(nk)] <- length(kset)
+		##xk[length(xk)] <- (2 * left + (max(set) - min(set))/num)/2
+		cat(left, if (left == -Inf) "\t\t" else "\t", right,if (right == Inf) "\t\t" else "\t", nk[length(nk)],"\t", pk[length(pk)],"\t", length(set)*pk[length(pk)],"\t", nk[length(nk)] - length(set)*pk[length(pk)],"\t", (nk[length(nk)] - length(set)*pk[length(pk)])^2/(length(set)*pk[length(pk)]), "\n")
+		break
+		}
+		pk <- c(pk, f0((right-mean)/s) - f0((left-mean)/s))
+		nk <- c(nk, length(kset))
+		##xk <- c(xk, ((if (left == -Inf) (right - (max(set) - min(set))/num) else left) + (if (right == Inf) (left + (max(set) - min(set))/num) else right))/2)
+		cat(left, if (left == -Inf) "\t\t" else "\t", right,if (right == Inf) "\t\t" else "\t", length(kset),"\t", f0((right-mean)/s) - f0((left-mean)/s),"\t", length(set)*(f0((right-mean)/s) - f0((left-mean)/s)),"\t", length(kset) - length(set)*(f0((right-mean)/s) - f0((left-mean)/s)),"\t", (length(kset) - length(set)*(f0((right-mean)/s) - f0((left-mean)/s)))^2/(length(set)*(f0((right-mean)/s) - f0((left-mean)/s))), "\n")
+		if (k == num) break
+		k <- k + 1
+	}
+	plot(Vectorize(prob_dis),-4,4,col="red")
+	##lines(xk,nk/100)
+	lines(xk,yk/100, ylab="f(x)")
+	sum <- 0
+	for (i in 1:length(pk)) {
+		sum <- sum + (nk[i] - length(set)*pk[i])^2/(length(set)*pk[i])
+	}
+	c(sum, length(pk))
+}
+
+dostuffK <- function(set) {
+	Dn <- -Inf
+	for (i in 1:length(set)) {
+		some <- abs(Fn(set, set[i]) - (1+erf(set[i]/sqrt(2)))/2)
+		if (some > Dn) {
+			Dn = some
+		}
+	}
+	plot(Vectorize(function(x) to_com_dis(x,set)),-4,4, ylab="F(x)")
+	plot(Vectorize(com_dis),-4,4,col="red", add=TRUE)
+	Dn
+}
+
+set <- rnorm(100,0,1)
+dostuffX(set, 7)
+dostuffK(set)

@@ -1,0 +1,23 @@
+package ru.javanfc2d;
+
+import net.java.games.input.Controller;
+
+
+public class Joystick{
+	JInputJoystick joystick = new JInputJoystick(Controller.Type.STICK, Controller.Type.GAMEPAD);
+	// Check if the controller was found.
+	if( !joystick.isControllerConnected() ){
+	   System.out.println("No controller found!");
+	   // Do some stuff.
+	}	
+
+
+	// Get current state of joystick! And check, if joystick is disconnected.
+	if( !joystick.pollController() ) {
+	   System.out.println("Controller disconnected!");
+	   // Do some stuff.
+	}
+	
+
+
+}

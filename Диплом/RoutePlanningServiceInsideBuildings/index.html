@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<title>Route Planning Service Inside Buildings</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/algorithm.js"></script>
+	<script type="text/javascript" src="./js/utils.js"></script>
+
+</head>
+<body >
+	<header>
+		<h2  id="title">Route Planning Service Inside Buildings</h1>
+	</header>
+	<div id="wrapper">
+		<canvas id="myMap" ></canvas>
+		<canvas id="myCanvas"> </canvas>
+		<div id="buttonWrapper">
+			<fieldset id="submenu">
+				<form >
+					<select id="building" name="building">
+						<option selected="selected">Выберите здание</option>
+						<option value="1">Эрмитаж</option>
+					</select>
+				</form>
+				<br />
+				<form >
+					<select id="floor" name="floor">
+						<option selected="selected">Выберите этаж</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</form>
+				<br />
+				<div id="buttonShowMap">
+					<button id="myMapbutton" class="mbtn">Показать карту</button>
+					<br /> <br />
+					<button id="ourMapbutton" class="ombtn">Загрузите свою карту</button>
+				</div>
+				<input type="button" id="fit" value="Масштаб">
+				<div id="zoom">
+					<input type="image" id="plus" src="images/plus.png" width="40" height="40" />
+					<input type="image" id="minus" src="images/mines.png" width="40" height="40"/>
+				</div>
+				<div id="pan">
+					<input id="uparrow" type="image" src="images/uparrow.png" width="50" height="50" />
+					<br>				
+					<input id="leftarrow" type="image" src="images/leftarrow.png" width="50" height="50" />
+					<input id="rightarrow" type="image" src="images/rightarrow.png" width="50" height="50" />
+					<br>
+					<input id="downarrow" type="image" src="images/downarrow.png" width="50" height="50" />
+				</div>
+				<div id="Legend">
+					<button id="buttonLegend" class="lbtn" >Показать легенду</button>
+				</div> 
+			</fieldset>
+		</div>
+	</div>
+	<fieldset class="fieldset">
+		<legend>Панель управления</legend>
+		<iframe id="legendframe1f" hidden  src="images/legend1f.png"></iframe>
+		<iframe id="legendframe2f" hidden  src="images/legend2f.png"></iframe>
+		<iframe id="legendframe3f" hidden  src="images/legend3f.png"></iframe>
+		<div id="control_buttons" class="btn-group row">
+			<button id="addRandom_btn" class="btn">Добавить точки</button>
+			<button id="start_btn" class="btn">Проложить маршрут</button>
+			<button id="worstroute" class="btn">Оставить худший путь</button>
+			<button id="bestroute" class="btn"> Оставить лучший путь</button>
+			<!--button id="reload_btn" class="btn">Перезапуск</button-->
+			<!--button id="stop_btn" class="btn">Стоп</button-->
+			<button id="clear_btn" class="btn">Очистить</button>
+			<button id="exit_btn" class="btn">Выход</button>
+		</div>
+		<div class="row">
+				<span id="status" class="show-grid"></span>
+				<span id="worststatuspoints" class="show-grid"></span>
+				<span id="statuspoints" class="show-grid"></span>
+				<input type="file" id="file" value="open image" ap-file-src="leftCanvas.src">
+			</div>
+	</fieldset>
+	<footer>
+	</footer>
+</body>
+</html>

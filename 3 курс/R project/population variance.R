@@ -1,0 +1,39 @@
+S5<-0
+S10<-0
+S15<-0
+S20<-0
+S40<-0
+S100<-0
+M<-0.001
+for (i in 1:1000) {
+  n5<-rnorm(5,0,1)
+  n10<-rnorm(10,0,1)
+  n15<-rnorm(15,0,1)
+  n20<-rnorm(20,0,1)
+  n40<-rnorm(40,0,1)
+  n100<-rnorm(100,0,1)
+  S5[i]<-sum((n5-mean(n5))^2)*1/5
+  S10[i]<-sum((n10-mean(n10))^2)*1/10
+  S15[i]<-sum((n15-mean(n15))^2)*1/15
+  S20[i]<-sum((n20-mean(n20))^2)*1/20
+  S40[i]<-sum((n40-mean(n40))^2)*1/40
+  S100[i]<-sum((n100-mean(n100))^2)*1/100
+}
+firstmid1<-sum(S5)*M
+firstmid2<-sum(S10)*M
+firstmid3<-sum(S15)*M
+firstmid4<-sum(S20)*M
+firstmid5<-sum(S40)*M
+firstmid6<-sum(S100)*M
+secondmid1<-(sum(S5)^2*M)
+secondmid2<-(sum(S10)^2*M)
+secondmid3<-(sum(S15)^2*M)
+secondmid4<-(sum(S20)^2*M)
+secondmid5<-(sum(S40)^2*M)
+secondmid6<-(sum(S100)^2*M)
+DS1<-secondmid1-firstmid1^2
+DS2<-secondmid2-firstmid2^2
+DS3<-secondmid3-firstmid3^2
+DS4<-secondmid4-firstmid4^2
+DS5<-secondmid5-firstmid5^2
+DS6<-secondmid6-firstmid6^2

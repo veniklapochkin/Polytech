@@ -1,0 +1,44 @@
+package ru.java2d;
+
+import java.awt.Image;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+
+
+public class Place {
+	Image png2 = new ImageIcon("models/Place.png").getImage();
+	int x;
+	int y;
+	int s;
+	int v;
+	int place1;
+
+public void move() {
+	s += v;
+	place1 -= v;
+
+}
+public void keyPressed(KeyEvent e) { 
+	  int key = e.getKeyCode();
+	  if (key==KeyEvent.VK_RIGHT){
+		//  a=1;
+		  x--;
+		  
+	  }
+	  if (key==KeyEvent.VK_LEFT){
+		// a=-1;
+		  x++;
+		  
+	  }
+	  
+
+}
+
+public void keyReleased(KeyEvent e) {  
+	  int key = e.getKeyCode();
+	  if (key==KeyEvent.VK_LEFT||key==KeyEvent.VK_RIGHT){
+		  //x=40;
+		 // a=0;
+	  }
+}}

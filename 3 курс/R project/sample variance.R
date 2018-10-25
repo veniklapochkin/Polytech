@@ -1,0 +1,33 @@
+S1<-0
+S2<-0
+S3<-0
+S4<-0
+S5<-0
+S6<-0
+M<-0.001
+for(i in 1:1000){
+  S1[i]<-var(rnorm(5,0,1))
+  S2[i]<-var(rnorm(10,0,1))
+  S3[i]<-var(rnorm(15,0,1))
+  S4[i]<-var(rnorm(20,0,1))
+  S5[i]<-var(rnorm(40,0,1))
+  S6[i]<-var(rnorm(100,0,1))
+}
+firstmid1<-sum(S1)*M
+firstmid2<-sum(S2)*M
+firstmid3<-sum(S3)*M
+firstmid4<-sum(S4)*M
+firstmid5<-sum(S5)*M
+firstmid6<-sum(S6)*M
+secondmid1<-sum(S1)^2*M^2
+secondmid2<-sum(S2)^2*M^2
+secondmid3<-sum(S3)^2*M^2
+secondmid4<-sum(S4)^2*M^2
+secondmid5<-sum(S5)^2*M^2
+secondmid6<-sum(S6)^2*M^2
+DS1<-secondmid1-firstmid1
+DS2<-secondmid2-firstmid2
+DS3<-secondmid3-firstmid3
+DS4<-secondmid4-firstmid4
+DS5<-secondmid5-firstmid5
+DS6<-secondmid6-firstmid6

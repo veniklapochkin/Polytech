@@ -1,0 +1,90 @@
+package ru.javanfc2d;
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Panel;
+import java.awt.TextArea;
+
+import javax.swing.JFrame;
+
+public class Game extends JFrame {
+
+	
+	
+	/*	 private JTextField textField;
+	public void createGUI() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
+
+        JButton button1 = new JButton("Button 1");
+        button1.setActionCommand("Button 1 was pressed!");
+        panel.add(button1);
+
+        JButton button2 = new JButton("Button 2");
+        button2.setActionCommand("Button 2 was pressed!");
+        panel.add(button2);
+
+        JButton button3 = new JButton("Button 3");
+        button3.setActionCommand("Button 3 was pressed!");
+        panel.add(button3);
+
+        textField = new JTextField();
+        textField.setColumns(23);
+        panel.add(textField);
+
+        ActionListener actionListener = new TestActionListener();
+         
+        button1.addActionListener(actionListener);
+        button2.addActionListener(actionListener);
+         
+        button3.addActionListener(new ActionListener() {
+             public void actionPerformed(ActionEvent e) {
+                  textField.setText(e.getActionCommand());
+             }
+        });
+        getContentPane().add(panel);
+        setPreferredSize(new Dimension(320, 100));
+   }
+
+        public class TestActionListener implements ActionListener {
+            public void actionPerformed(ActionEvent e) {
+                 textField.setText(e.getActionCommand());
+            }
+       }*/
+        
+	public static void main(String[] args) {
+		public Game()
+		{
+		super();
+		setSize( 200, 200 );
+		setLayout( new BorderLayout() );
+		setBackground( Color.lightGray );
+		// Create a subpanel for the toolbar
+		Panel toolbar = new Panel();
+		toolbar.setLayout( new FlowLayout() );
+		toolbar.add( new Button( "Button 1" ) );
+		toolbar.add( new Button( "Button 2" ) );
+		toolbar.add( new Button( "Button 3" ) );
+		toolbar.add( new Button( "Button 4" ) );
+		toolbar.add( new Button( "Button 5" ) );
+		// Add the toolbar to the main panel
+		add( toolbar, BorderLayout.NORTH );
+		// Add a multi-line editor to the reset of the panel
+		add( new TextArea(), BorderLayout.CENTER );
+		
+		JFrame f = new JFrame("Need for Speed");
+		// Menu frame = new Menu();
+       // frame.pack();
+       //frame.setLocationRelativeTo(null);
+       // JFrame.setDefaultLookAndFeelDecorated(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(1366, 768);
+		f.add(new Road());
+		f.setVisible(true);
+	}
+}
+}

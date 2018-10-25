@@ -1,0 +1,38 @@
+m4 <- function(set) {
+	mean <- mean(set)
+	sum <- 0
+	for (i in 1:length(set))
+		sum <- sum + (set[i] - mean)^4
+	sum/length(set)
+}
+
+set <- rnorm(21,0,1)
+t <- 2.42311654
+m_down <- mean(set) - sd(set)*t/sqrt(21-1)
+m_up <- mean(set) + sd(set)*t/sqrt(21-1)
+hi_down <- 34.1696
+hi_up <- 9.5908
+disp_down <- 21*sd(set)^2/hi_down
+disp_up <- 21*sd(set)^2/hi_up
+Finv <- 1.96
+m_mmp_down <- mean(set) - Finv*sd(set)/sqrt(21)
+m_mmp_up <- mean(set) + Finv*sd(set)/sqrt(21)
+disp_mmp_down <- sd(set)^2 * (1 - Finv*sqrt(m4(set)/sd(set)^4 - 1)/sqrt(21))
+disp_mmp_up <- sd(set)^2 * (1 + Finv*sqrt(m4(set)/sd(set)^4 - 1)/sqrt(21))
+
+set
+
+t
+m_down
+m_up
+
+hi_down
+disp_down
+
+hi_up
+disp_up
+
+m_mmp_down
+m_mmp_up
+disp_mmp_down
+disp_mmp_up

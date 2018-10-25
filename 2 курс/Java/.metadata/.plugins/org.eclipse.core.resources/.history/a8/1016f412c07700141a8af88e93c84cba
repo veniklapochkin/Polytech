@@ -1,0 +1,11 @@
+package ru.java2d;
+
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+
+public class Place {
+	Image png2 = new ImageIcon("models/Place.png").getImage();
+	int x;
+	int y;
+}

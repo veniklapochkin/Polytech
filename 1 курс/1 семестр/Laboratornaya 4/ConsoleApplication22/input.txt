@@ -1,0 +1,10 @@
+123456 123 Ivanov_Q.W.
+012345 119 Borisov_V.B.
+019283 123 Bondar_L.L.
+583920 119 Chebukin_A.T.
+201938 142 Tynik_M.Y.
+659350 115 Parshin_A.O.
+710281 119 Larionova_S.L.
+304829 120 Nedobuga_S.M.
+930284 120 Shpunov_I.M.
+938781 115 Samoilov_A.A.

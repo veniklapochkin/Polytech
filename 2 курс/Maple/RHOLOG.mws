@@ -1,0 +1,92 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Warning" -1 7 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 0 
+0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 1561 "RHOLOG:=proc(x,g,p
+)\nq:=p-1;\n\n#\356\357\360\345\344\345\353\345\355\350\345 \356\362
+\356\341\360\340\346\345\355\350\377 \344\353\377 \357\356\360\356\346
+\344\345\355\350\377\n\nf:=proc(z)\n  if((z mod 3) = 1) then return x*
+z; fi;\n  if((z mod 3) = 0) then return z^2; fi;\n  if((z mod 3) = 2) \+
+then return g*z; fi;\nend;\n\nphi:=proc(z,n)\n  if((z mod 3) = 1) then
+ return n;   fi;\n  if((z mod 3) = 0) then return 2*n; fi;\n  if((z mo
+d 3) = 2) then return n+1; fi;\nend;\n\npsi := proc (z,n) \n  if((z mo
+d 3) = 1) then return n+1; fi; \n  if((z mod 3) = 0) then return 2*n; \+
+fi; \n  if((z mod 3) = 2) then return n;   fi;\nend; \n\nui  := 0; vi \+
+ := 0; \nu2i := 0; v2i := 0; \nzi := 1; z2i := 1;\nui :=(phi(zi, ui) m
+od q); \nvi :=(psi(zi, vi) mod q); \nzi :=(f(zi) mod p);\ntmp:= (phi(z
+2i, u2i) mod q); \ntmp1:=(psi(z2i, v2i) mod q); \nz2i := (f(z2i) mod p
+); \nu2i := (phi(z2i, tmp)mod q);\nv2i := (psi(z2i, tmp1)mod q); \nz2i
+ := (f(z2i)mod p);\nwhile(zi<>z2i) do\n  ui :=(phi(zi, ui) mod q); \n \+
+ vi :=(psi(zi, vi) mod q); \n  zi :=(f(zi) mod p);\n  tmp:= (phi(z2i, \+
+u2i) mod q); \n  tmp1:=(psi(z2i, v2i) mod q); \n  z2i := (f(z2i) mod p
+); \n  u2i := (phi(z2i, tmp)mod q);\n  v2i := (psi(z2i, tmp1)mod q); \+
+\n  z2i := (f(z2i)mod p);\nod;\nr := vi-v2i mod q;\nif (r = 0) then pr
+int(\"Failure\"); \nreturn -1; fi;\nm := (u2i-ui mod q);\ns := 0; t :=
+ 0; \ngcd := igcdex(r, q, 's', 't'); \nif gcd = 1 then \nreturn s*m mo
+d q; \nelse \nif (m mod gcd <> 0) \nthen print(\"no solution exist\");
+ return -2; fi;\nq1 := q/gcd; r1 := r/gcd; m1 := m/gcd; \nigcdex(r1, q
+1, 's', 't');\nfor i from 0 to gcd-1 do \nif (g^((i*q1+m1*s mod q)) mo
+d p) = x then \nreturn (i*q1+m1*s mod q); fi; od; fi; \nprint(\"cannot
+ find solution\");\nreturn 0;\nend proc;\n" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warning, `q` is impli
+citly declared local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT 
+-1 64 "Warning, `f` is implicitly declared local to procedure `RHOLOG`
+\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warning, `phi` is implicitly declar
+ed local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warni
+ng, `psi` is implicitly declared local to procedure `RHOLOG`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 65 "Warning, `ui` is implicitly declared loca
+l to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 65 "Warning, `vi
+` is implicitly declared local to procedure `RHOLOG`\n" }}{PARA 7 "" 
+1 "" {TEXT -1 66 "Warning, `u2i` is implicitly declared local to proce
+dure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warning, `v2i` is impl
+icitly declared local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" 
+{TEXT -1 65 "Warning, `zi` is implicitly declared local to procedure `
+RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warning, `z2i` is implicitly
+ declared local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 
+66 "Warning, `tmp` is implicitly declared local to procedure `RHOLOG`
+\n" }}{PARA 7 "" 1 "" {TEXT -1 67 "Warning, `tmp1` is implicitly decla
+red local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warn
+ing, `r` is implicitly declared local to procedure `RHOLOG`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 64 "Warning, `m` is implicitly declared local
+ to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warning, `s` \+
+is implicitly declared local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "
+" {TEXT -1 64 "Warning, `t` is implicitly declared local to procedure \+
+`RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warning, `gcd` is implicitl
+y declared local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 
+65 "Warning, `q1` is implicitly declared local to procedure `RHOLOG`\n
+" }}{PARA 7 "" 1 "" {TEXT -1 65 "Warning, `r1` is implicitly declared \+
+local to procedure `RHOLOG`\n" }}{PARA 7 "" 1 "" {TEXT -1 65 "Warning,
+ `m1` is implicitly declared local to procedure `RHOLOG`\n" }}{PARA 7 
+"" 1 "" {TEXT -1 64 "Warning, `i` is implicitly declared local to proc
+edure `RHOLOG`\n" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'RHOLOGGf*6%%\"x
+G%\"gG%\"pG67%\"qG%\"fG%$phiG%$psiG%#uiG%#viG%$u2iG%$v2iG%#ziG%$z2iG%$
+tmpG%%tmp1G%\"rG%\"mG%\"sG%\"tG%$gcdG%#q1G%#r1G%#m1G%\"iG6\"F@C?>8$,&9
+&\"\"\"FF!\"\">8%f*6#%\"zGF@F@F@C%@$/-%$modG6$9$\"\"$FFO*&T$FFFSFF@$/F
+P\"\"!O*$)FS\"\"#FF@$/FPFhnO*&T&FFFSFFF@F@6&F'FSF(9%>8&f*6$FL%\"nGF@F@
+F@C%@$FOOF_o@$FYO,$*&FhnFFF_oFFFF@$FjnO,&F_oFFFFFFF@F@F@>8'f*FcoF@F@F@
+C%@$FOOF^p@$FYOFjo@$FjnOF_oF@F@F@>8(FZ>8)FZ>8*FZ>8+FZ>8,FF>8-FF>Fjp-FQ
+6$-Fao6$FbqFjpFC>F\\q-FQ6$-F`p6$FbqF\\qFC>Fbq-FQ6$-FI6#FbqFE>8.-FQ6$-F
+ao6$FdqF^qFC>8/-FQ6$-F`p6$FdqF`qFC>Fdq-FQ6$-FI6#FdqFE>F^q-FQ6$-Fao6$Fd
+qFerFC>F`q-FQ6$-F`p6$FdqF[sFC>FdqFas?(F@FFFFF@0FbqFdqC+>FjpFfq>F\\qF[r
+>FbqF`r>FerFfr>F[sF\\s>FdqFas>F^qFfs>F`qF[t>FdqFas>80-FQ6$,&F\\qFFF`qF
+GFC@$/F]uFZC$-%&printG6#Q(FailureF@OFG>81-FQ6$,&F^qFFFjpFGFC>82FZ>83FZ
+>84-%'igcdexG6&F]uFC.F_v.Fav@%/FcvFFO-FQ6$*&F_vFFFjuFFFCC(@$0-FQ6$FjuF
+cvFZC$-Feu6#Q2no~solution~existF@O!\"#>85*&FCFFFcvFG>86*&F]uFFFcvFG>87
+*&FjuFFFcvFG-Fev6&F^xF[xFgvFhv?(88FZFF,&FcvFFFFFG%%trueG@$/-FQ6$)F_o-F
+Q6$,&*&FfxFFF[xFFFF*&FaxFFF_vFFFFFCFEFSOF^y-Feu6#Q5cannot~find~solutio
+nF@OFZF@F@F@" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "RHOLOG(11, \+
+3, 113);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#u" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 20 "RHOLOG(228, 2, 383);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"$5\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "RH
+OLOG(9, 3, 113);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"#" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "RHOLOG(5, 2, 7237);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#\"%&3%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+0 "" }}}}{MARK "5 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

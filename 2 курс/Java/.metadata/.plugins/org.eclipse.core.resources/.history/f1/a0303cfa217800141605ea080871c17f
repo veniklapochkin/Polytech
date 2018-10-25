@@ -1,0 +1,19 @@
+package ru.javanfc2d;
+
+import java.io.FileNotFoundException;
+
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+public class AudioThread implements Runnable {
+
+
+	public void run() {
+		try {
+			Player	player = new Player(getClass().getClassLoader().getResourceAsStream("01 Carousel.mp3"));
+			player.play();
+		} catch (/*FileNotFoundException |*/ JavaLayerException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

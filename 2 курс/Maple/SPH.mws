@@ -1,0 +1,157 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Warning" -1 7 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 0 
+0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 626 "SPH:=proc(alpha,n,b
+eta)\nfactArr:=ifactors(n);  \nfactArrSize:=numelems(factArr[2]);\np:=
+n+1;\nx:=[0$factArrSize];\nfor i from 1 by 1 to factArrSize do\n  q:=f
+actArr[2,i,1];\n  e:=factArr[2,i,2];\n  gamma:=1;\n  alpha_:=alpha^(n/
+q) mod p;\n   for j from 0 by 1 to e-1 do\n    gamma:=gamma*alpha^(l[j
++1]*q^(j-1)) mod p;\n    beta_:=(beta*gamma^(-1))^(n/(q^(j+1))) mod p;
+\n   od;\n   for m from 0 by 1 to e-1 do\n    x[i]:=x[i]+l[m+2]*q^m;\n
+   od;\nod;\nx_:=0;\nfor i from 1 by 1 to factArrSize do\n  ni:=(factA
+rr[2,i,1])^(factArr[2,i,2]);\n  Ni:=n/ni;\n  Mi:=(Ni^(-1)) mod ni;\n  \+
+x_:=x_+x[i]*Ni*Mi mod n;\nod;\nprint(\"Answer: \");\nreturn x_;\nend p
+roc; \n" }}{PARA 7 "" 1 "" {TEXT -1 67 "Warning, `factArr` is implicit
+ly declared local to procedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 71 
+"Warning, `factArrSize` is implicitly declared local to procedure `SPH
+`\n" }}{PARA 7 "" 1 "" {TEXT -1 61 "Warning, `p` is implicitly declare
+d local to procedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 61 "Warning, \+
+`x` is implicitly declared local to procedure `SPH`\n" }}{PARA 7 "" 1 
+"" {TEXT -1 61 "Warning, `i` is implicitly declared local to procedure
+ `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 61 "Warning, `q` is implicitly de
+clared local to procedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 61 "Warn
+ing, `e` is implicitly declared local to procedure `SPH`\n" }}{PARA 7 
+"" 1 "" {TEXT -1 65 "Warning, `gamma` is implicitly declared local to \+
+procedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warning, `alpha_` is
+ implicitly declared local to procedure `SPH`\n" }}{PARA 7 "" 1 "" 
+{TEXT -1 61 "Warning, `j` is implicitly declared local to procedure `S
+PH`\n" }}{PARA 7 "" 1 "" {TEXT -1 65 "Warning, `beta_` is implicitly d
+eclared local to procedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 61 "War
+ning, `m` is implicitly declared local to procedure `SPH`\n" }}{PARA 
+7 "" 1 "" {TEXT -1 62 "Warning, `x_` is implicitly declared local to p
+rocedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT -1 62 "Warning, `ni` is impl
+icitly declared local to procedure `SPH`\n" }}{PARA 7 "" 1 "" {TEXT 
+-1 62 "Warning, `Ni` is implicitly declared local to procedure `SPH`\n
+" }}{PARA 7 "" 1 "" {TEXT -1 62 "Warning, `Mi` is implicitly declared \+
+local to procedure `SPH`\n" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$SPHGf
+*6%%&alphaG%\"nG%%betaG62%(factArrG%,factArrSizeG%\"pG%\"xG%\"iG%\"qG%
+\"eG%&gammaG%'alpha_G%\"jG%&beta_G%\"mG%#x_G%#niG%#NiG%#MiG6\"F;C+>8$-
+%)ifactorsG6#9%>8%-%)numelemsG6#&F>6#\"\"#>8&,&FB\"\"\"FNFN>8'7#-%\"$G
+6$\"\"!FD?(8(FNFNFD%%trueGC(>8)&F>6%FJFWFN>8*&F>6%FJFWFJ>8+FN>8,-%$mod
+G6$)9$*&FBFNFen!\"\"FL?(8-FUFN,&FinFNFNFfoFXC$>F]o-Fao6$*&F]oFN)Fdo*&&
+%\"lG6#,&FhoFNFNFNFN)Fen,&FhoFNFNFfoFNFNFL>8.-Fao6$)*&9&FNF]oFfo*&FBFN
+)FenFdpFfoFL?(8/FUFNFioFX>&FP6#FW,&FcqFN*&&Fbp6#,&FaqFNFJFNFN)FenFaqFN
+FN>80FU?(FWFNFNFDFXC&>81)FfnFjn>82*&FBFNF`rFfo>83-Fao6$*&FNFNFcrFfoF`r
+>F\\r-Fao6$,&F\\rFN*(FcqFNFcrFNFfrFNFNFB-%&printG6#Q)Answer:~F;OF\\rF;
+F;F;" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 531 "Shenks:=proc(alpha
+,n,beta)\np:=n+1;\nm:=ceil(evalf(sqrt(n)));\na:=[[0$2]$m];\nfor j from
+ 1 by 1 to m do\n a[j,2]:=j-1;\n a[j,1]:=alpha^(j-1) mod p;\n print(a[
+j,2], a[j,1]);\nod;\nsort(a);\nalpha_1:=alpha^(-1) mod p;\nalpha_m:=al
+pha_1^m mod p;\ni:=0;\nflag:=0;\ngamma:=beta*alpha^(-m*i) mod p;\nwhil
+e(flag<>1) do\n   for k from 1 by 1 to m do\n      if (gamma=a[k,1]) t
+hen\n        flag:=1;\n        k_:=k-1;\n      fi;\n   od;\n   if (fla
+g<>1) then\n     i:=i+1;\n     gamma:=beta*alpha^(-m*i) mod p;\n   fi;
+\nod;\nprint(\"answer\");\nreturn(k_+i*m);\nend proc;\n" }}{PARA 7 "" 
+1 "" {TEXT -1 64 "Warning, `p` is implicitly declared local to procedu
+re `Shenks`\n" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warning, `m` is implicit
+ly declared local to procedure `Shenks`\n" }}{PARA 7 "" 1 "" {TEXT -1 
+64 "Warning, `a` is implicitly declared local to procedure `Shenks`\n
+" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warning, `j` is implicitly declared l
+ocal to procedure `Shenks`\n" }}{PARA 7 "" 1 "" {TEXT -1 70 "Warning, \+
+`alpha_1` is implicitly declared local to procedure `Shenks`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 70 "Warning, `alpha_m` is implicitly declared
+ local to procedure `Shenks`\n" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warning
+, `i` is implicitly declared local to procedure `Shenks`\n" }}{PARA 7 
+"" 1 "" {TEXT -1 67 "Warning, `flag` is implicitly declared local to p
+rocedure `Shenks`\n" }}{PARA 7 "" 1 "" {TEXT -1 68 "Warning, `gamma` i
+s implicitly declared local to procedure `Shenks`\n" }}{PARA 7 "" 1 "
+" {TEXT -1 64 "Warning, `k` is implicitly declared local to procedure \+
+`Shenks`\n" }}{PARA 7 "" 1 "" {TEXT -1 65 "Warning, `k_` is implicitly
+ declared local to procedure `Shenks`\n" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%'ShenksGf*6%%&alphaG%\"nG%%betaG6-%\"pG%\"mG%\"aG%\"jG%(alpha_
+1G%(alpha_mG%\"iG%%flagG%&gammaG%\"kG%#k_G6\"F6C/>8$,&9%\"\"\"F<F<>8%-
+%%ceilG6#-%&evalfG6#-%%sqrtG6#F;>8&7#-%\"$G6$7#-FL6$\"\"!\"\"#F>?(8'F<
+F<F>%%trueGC%>&FI6$FTFR,&FTF<F<!\"\">&FI6$FTF<-%$modG6$)9$FZF9-%&print
+G6$FXFgn-%%sortG6#FI>8(-Fjn6$*&F<F<F]oFenF9>8)-Fjn6$)FeoF>F9>8*FQ>8+FQ
+>8,-Fjn6$*&9&F<)F]o,$*&F>F<F_pF<FenF<F9?(F6F<F<F60FapF<C$?(8-F<F<F>FU@
+$/Fcp&FI6$F_qF<C$>FapF<>8.,&F_qF<F<Fen@$F\\qC$>F_p,&F_pF<F<F<>FcpFdp-F
+_o6#Q'answerF6O,&FgqF<FjpF<F6F6F6" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "Shenks(3,112,57);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$
+\"\"!\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"\"\"\"$" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"\"#\"\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6$\"\"$\"#F" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%\"#\")" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"\"&\"#<" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+$\"\"'\"#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"(\"#S" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"\")\"\"(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"
+\"*\"#@" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#5\"#j" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#Q'answer6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$+\"
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "Shenks(2,7236,5);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"!\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"\"\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"#\"
+\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$\"\")" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"%\"#;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"&\"#K
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"'\"#k" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"(\"$G\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\")\"$
+c#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"*\"$7&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#5\"%C5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#6\"%[?
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#7\"%'4%" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#8\"$b*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#9\"%5>
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#:\"%?Q" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#;\"$.%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#<\"$1)
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#=\"%7;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#>\"%CK" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#?\"%[k
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#@\"%fc" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#A\"%\"3%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#B\"$D
+*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#C\"%]=" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#D\"%+P" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#E\"$j\"
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#F\"$E$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#G\"$_'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#H\"%/8
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#I\"%3E" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#J\"%;_" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#K\"%&>$
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#L\"%!R'" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#M\"%Vb" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#N\"%\\Q
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#O\"$h%" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#P\"$A*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#Q\"%W=
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#R\"%)o$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#S\"$R\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#T\"$y#
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#U\"$c&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#V\"%76" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#W\"%CA
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#X\"%[W" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#Y\"%f;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#Z\"%=L
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#[\"%Om" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#\\\"%Ng" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#]\"%L[
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#^\"%HC" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#_\"%e[" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#`\"%zC
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#a\"%e\\" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#b\"%zE" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#c\"%e`
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#d\"%zM" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#e\"%ep" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#f\"%zm
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#g\"%@h" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#h\"%0]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#i\"%tF
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#j\"%Yb" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#k\"%bQ" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#l\"$t%
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#m\"$Y*" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#n\"%#*=" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#o\"%%y
+$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#p\"$J$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#q\"$i'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#r\"%C8
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#s\"%[E" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#t\"%'H&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#u\"%bL
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#v\"%5n" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#w\"%$='" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#x\"%H^
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#y\"%@I" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#z\"%Ug" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#!)\"%Z[
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#\")\"%dC" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"##)\"%9\\" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#$)\"%
+\"f#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#%)\"%#=&" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6$\"#&)\"%FJ" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#Q'answe
+r6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"%&3%" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "4 0 0" 0 }{VIEWOPTS 1 1 0 1 1 
+1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

@@ -1,0 +1,79 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Text Output" -1 2 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 0 0 0 0 0 1 3 0 3 0 }1 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Warning" 2 7 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 255 1 0 0 0 0 0 0 1 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 979 "Dixon := proc (N,B)
+ \nu := 1; h := 0; p := 1; \nif isprime(N) then \nreturn N; \nfi; \nwh
+ile (p <= B) do \np := nextprime(p); \nh := h+1; \nod; \nPv := Vector(
+h); \nalpha := Vector(h); \nP[1] := 2; \nfor i from 2 to h do \nPv[i] \+
+:= nextprime(Pv[i-1]); \nif 1 < gcd(Pv[i], N) then \nreturn Pv[i]; \nf
+i; \nod; \nA := Matrix(h+1, h); \nBs := Vector(h+1);\nu := 1; s := 1; \+
+t := 1; \nwhile (u <= h+1) do \nb := RandomTools[Generate](integer(ran
+ge = 2 .. N-2)); \ng := gcd(b, N); \nif g > 1 then \nreturn g; \nfi; \+
+\na :=b^2 mod N; \nfor i to h do alpha[i] := 0; \nwhile (1 < gcd(Pv[i]
+, a)) do \nalpha[i] := alpha[i]+1; \na := a/P[i];\nod; od;\nif a = 1 t
+hen \nfor i to h do \nA[u, i] := alpha[i]; \nod; \nBs[u] := b;\nu := u
++1; \nfi; \nod; \nw :=NullSpace(transpose(A))[0] mod 2;\ngamma := Vect
+or(h);\ngamma := (1/2)*Transpose(w).A;\nfor k to h+1 do \nif w[k] = 1 \+
+then \ns := s*B2[k]; \nfi; \nod;\nPs := Transpose(P); \nfor j to h do \+
+\nt := t*Ps[j]^gamma[j];\nod;\ng := gcd(s+t, N);\nif g < N then \nretu
+rn g; \nfi; \nreturn falure;\nend proc;" }}{PARA 7 "" 1 "" {TEXT -1 
+63 "Warning, `u` is implicitly declared local to procedure `Dixon`\n" 
+}}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `h` is implicitly declared loc
+al to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `p`
+ is implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "
+" {TEXT -1 64 "Warning, `Pv` is implicitly declared local to procedure
+ `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 67 "Warning, `alpha` is implici
+tly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 
+63 "Warning, `P` is implicitly declared local to procedure `Dixon`\n" 
+}}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `i` is implicitly declared loc
+al to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `A`
+ is implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "
+" {TEXT -1 64 "Warning, `Bs` is implicitly declared local to procedure
+ `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `s` is implicitly \+
+declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "
+Warning, `t` is implicitly declared local to procedure `Dixon`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `b` is implicitly declared local
+ to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `g` i
+s implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" 
+{TEXT -1 63 "Warning, `a` is implicitly declared local to procedure `D
+ixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `w` is implicitly dec
+lared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 67 "War
+ning, `gamma` is implicitly declared local to procedure `Dixon`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `k` is implicitly declared local
+ to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 64 "Warning, `Ps` \+
+is implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "
+" {TEXT -1 63 "Warning, `j` is implicitly declared local to procedure \+
+`Dixon`\n" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&DixonGf*6$%\"NG%\"BG65
+%\"uG%\"hG%\"pG%#PvG%&alphaG%\"PG%\"iG%\"AG%#BsG%\"sG%\"tG%\"bG%\"gG%
+\"aG%\"wG%&gammaG%\"kG%#PsG%\"jG6\"F=C:>8$\"\"\">8%\"\"!>8&FA@$-%(ispr
+imeG6#9$OFK?(F=FAFAF=1FF9%C$>FF-%*nextprimeG6#FF>FC,&FCFAFAFA>8'-%'Vec
+torG6#FC>8(FY>&8)6#FA\"\"#?(8*F\\oFAFC%%trueGC$>&FX6#F^o-FS6#&FX6#,&F^
+oFAFA!\"\"@$2FA-%$gcdG6$FboFKOFbo>8+-%'MatrixG6$FVFC>8,-FZ6#FV>F@FA>8-
+FA>8.FA?(F=FAFAF=1F@FVC(>8/-&%,RandomToolsG6#%)GenerateG6#-%(integerG6
+#/%&rangeG;F\\o,&FKFAF\\oFio>80-F]p6$FbqFK@$2FAFarOFar>81-%$modG6$*$)F
+bqF\\oFAFK?(F^oFAFAFCF_oC$>&FgnFcoFD?(F=FAFAF=2FA-F]p6$FboFhrC$>Fas,&F
+asFAFAFA>Fhr*&FhrFA&FjnFcoFio@$/FhrFAC%?(F^oFAFAFCF_o>&Fap6$F@F^oFas>&
+Ffp6#F@Fbq>F@,&F@FAFAFA>82-Fjr6$&-%*NullSpaceG6#-%*transposeG6#Fap6#FD
+F\\o>83FY>Feu-%\".G6$,$*&#FAF\\oFA-%*TransposeG6#FitFAFAFap?(84FAFAFVF
+_o@$/&Fit6#FavFA>F[q*&F[qFA&%#B2GFevFA>85-F^v6#Fjn?(86FAFAFCF_o>F]q*&F
+]qFA)&F[w6#F_w&FeuFdwFA>Far-F]p6$,&F[qFAF]qFAFK@$2FarFKOFarO%'falureGF
+=F=F=" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "Dixon(2183,9);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#P" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 14 "Dixon(2183,4);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#
+f" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "Dixon(34274,534);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"#" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "Dixon(256027,30);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+\"$4&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "Dixon(31,45);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#J" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}}{MARK "6 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 
+1 }{PAGENUMBERS 0 1 2 33 1 1 }

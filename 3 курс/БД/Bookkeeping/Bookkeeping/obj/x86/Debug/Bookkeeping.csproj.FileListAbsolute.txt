@@ -1,0 +1,10 @@
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\bin\x86\Debug\Bookkeeping.exe.config
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\bin\x86\Debug\Bookkeeping.exe
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\bin\x86\Debug\Bookkeeping.pdb
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.csprojResolveAssemblyReference.cache
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.authentification.resources
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.MainWindow.resources
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.Properties.Resources.resources
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.csproj.GenerateResource.Cache
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.exe
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Bookkeeping\Bookkeeping\obj\x86\Debug\Bookkeeping.pdb

@@ -1,0 +1,12 @@
+BEGIN
+	y:=1;
+	REPEAT
+	y:=y+1;
+	x:=0;
+	REPEAT 
+	x:=x+1
+	UNTIL x <= 20;
+	WRITE(x)
+	UNTIL y <=30;
+	WRITE(y)
+END

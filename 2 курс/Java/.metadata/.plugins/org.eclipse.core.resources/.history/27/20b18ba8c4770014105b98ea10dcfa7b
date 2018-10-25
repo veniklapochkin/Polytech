@@ -1,0 +1,59 @@
+package ru.java2d;
+
+import java.awt.Image;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+
+public class Player {
+//	public static final int MAX_v=50;
+	Image png = new ImageIcon("models/md1.1.png").getImage();
+	int v = 0;
+	//int a = 1;
+	int s = 0;
+	int x = 600;
+	int y = 505;
+
+	int player1 = 0;
+
+	public void move() {
+		s += v;
+		player1 -= v;
+		//v+=a;
+		/*if (v >= MAX_v) v= MAX_v;
+		if (player1 + v <= 0) {
+			player1 = 0;
+			player2 = 3850;
+		} else {
+
+			player1 -= v;
+			player2 -= v;
+		}*/
+	}
+
+
+	
+	  
+	  public void keyPressed(KeyEvent e) { 
+		  int key = e.getKeyCode();
+		  if (key==KeyEvent.VK_RIGHT){
+			//  a=1;
+			  x++;
+			  
+		  }
+		  if (key==KeyEvent.VK_LEFT){
+			// a=-1;
+			  x--;
+			  
+		  }
+		  
+	  
+	  }
+	  
+	  public void keyReleased(KeyEvent e) {  
+		  int key = e.getKeyCode();
+		  if (key==KeyEvent.VK_LEFT||key==KeyEvent.VK_RIGHT){
+			  //x=40;
+			 // a=0;
+		  }
+}}

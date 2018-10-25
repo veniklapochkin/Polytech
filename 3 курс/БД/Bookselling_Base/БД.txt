@@ -1,0 +1,153 @@
+CREATE DATABASE Bookselling_base;	
+create table Storage_1 (№ INT AUTO_INCREMENT NOT NULL,author char(50) NOT NULL,Nbook char(50) NOT NULL,publishing char(20) NOT NULL,rating INT UNSIGNED NOT NULL,volume int(50),price INT UNSIGNED NOT NULL,PRIMARY KEY(№));
+create table Storage_2 (№ INT AUTO_INCREMENT NOT NULL,author char(50) NOT NULL,Nbook char(50) NOT NULL,publishing char(20) NOT NULL,rating INT UNSIGNED NOT NULL,volume int(50),price INT UNSIGNED NOT NULL,PRIMARY KEY(№));
+insert into Storage (author,Nbook,publishing,rating,volume,price) values
+	('George Orwell','1984','AST',700,4,200),
+	('George Orwell','Animal farm','AST',200,7,249),
+	('Aldous Huxley','Brave New Wordl','Exmo',300,12,300),
+	('Yevgeny Zamyatin','We','Exmo',100,2,213),
+	('William Golding','Lord of the Flies','AST',1000,5,189),
+	('Daniel Keyes','Billy Milligan','Exmo',900,3,249),
+	('Douglas Adams','The Hitchhiker’s Guide to the Galaxy','AST',750,8,155),
+	('Anthony Burgess','A Clockwork Orange','AST',550,2,180),
+	('Vladimir Nabokov','Lolita','Azbuka',470,21,142),
+	('Francis Scott','The Great Gatsby','Azbuka',210,11,105),
+	('Johann Paul','La Nausee','AST',780,6,189),
+	('Mikhail Bulgakov','The Master and Margarita','Azbuka',430,2,115),
+	('Harper Lee','To Kill a Mockingbird','AST',1200,13,361),
+	('George Martin','Game of Thrones','AST',3200,37,406),
+	('Oscar Wilde','The Picture of Dorian Gray','Azbuka',600,14,156),
+	('Kurt Vonnegut','Slaughterhouse-Five','AST',830,19,171),
+	('Charles Bukowski','Ham on Rye','Exmo',70,12,149),
+	('Stanislaw Lem','Solaris','AST',30,0,162),
+	('Hermann Hesse','Der Steppenwolf','AST',4,4,189),
+	('Ray Bradbury','Fahrenheit 451','Azbuka',400,9,451);
+insert into Storage (author,Nbook,publishing,rating,volume,price) values
+	('Andrzej Sapkowski','The Last Wish','Azbuka',1200,10,379),
+	('Andrzej Sapkowski','Sword of Destiny','Exmo',1000,3,599),
+	('Cormac McCarthy','The Road','AST',500,11,450),
+	('Thomas Harris','Red Dragon','AST',350,6,500),
+	('Clive Staples','The Chronicles of Narnia','Exmo',1750,16,539),
+	('Edgar Allan','The Fall of the House of Usher','Azbuka',1750,24,116),
+	('Gabriel Garcia','One Hundred Years of Solitude','AST',1520,12,495),
+	('Emily Bronte','Wuthering Heights','Azbuka',230,0,115),
+	('Hunter Thompson;','Fear and Loathing in Las Vegas','AST',560,7,180),
+	('Gaston Leroux','The Phantom of the Opera','Azbuka',980,1,116),
+	('Miguel de Cervantes Saavedra','Don Quijote','Azbuka',460,22,171),
+	('Victor Hugo','Les Miserables','Azbuka',320,17,163),	
+	('Mario Puzo','The Godfather','Exmo',660,10,181),
+	('Patrick Suskind','Das Parfum','Azbuka',500,8,142),
+	('Mikhail Lermontov','A Hero of Our Time','Azbuka',780,2,116),
+	('Jerome Salinger','The Catcher in the Rye','Exmo',100,14,135),
+	('Fyodor Dostoyevsky','Idiot','Exmo',220,10,217),
+	('John Steinbeck','The Grapes of Wrath','Exmo',310,18,148),
+	('William Shakespeare','Hamlet, Prince of Denmarke','Azbuka',400,3,105),
+	('Andy Weir','The Martian','AST',2050,0,400);
+create table Bill (№ INT AUTO_INCREMENT NOT NULL,Nproduct char(20) NOT NULL,publishing char(20) NOT NULL,price INT UNSIGNED NOT NULL,date Date NOT NULL,address char(30) NOT NULL,released char(50) NOT NULL,received char(50) NOT NULL,status char(10),PRIMARY KEY(№));
+insert into Bill(Nproduct,publishing,price,date,address,released,received,status) values
+	('Red Dragon','AST',500,'2015-10-19','Kovrov','Davidov','Samoilov','done'),
+	('We','EXMO',213,'2015-08-08','Rostov','Davlatov','Kirilova','done'),
+	('The Road','AST',450,'2015-09-09','Chelabinsk','Davidov','Bondar','done'),	
+	('Sword of Destiny','Exmo',599,'2015-08-01','SPB','Davidov','Borisov','done'),
+	('Fahrenheit 451','Azbuka',451,'2015-08-02','SPB','Davlatov','Borisov','done'),
+   	('Idiot','Exmo',217,'2015-08-03','Moskva','Al Capone','Ivanov','done'),
+	('Don Quijote','Azbuka',171,'2015-08-03','Moskva','Davidov','Ivanov','done'),
+	('La Nausee','AST',217,'2015-08-03','Moskva','Davlatov','Ivanov','done'),	
+	('Das Parfum','Azbuka',142,'2015-08-10','SPB','Davlatov','Borisov','done'),
+	('Ham on Rye','Exmo',148,'2015-08-12','SPB','Davidov','Borisov','done'),
+	('Red Dragon','AST',500,'2015-11-01','Kovrov','Al Capone','Nedobuga','done'),
+	('The Great Gatsby','Azbuka',105,'2015-09-07','SPB','Davlatov','Borisov','done'),
+	('1984','AST',200,'2015-10-15','Rostov','Davidov','Kirilova','done'),
+	('The Road','AST',450,'2015-08-27','SPB','Davidov','Borisov','done'),
+	('The Godfather','Exmo',181,'2015-10-25','SPB','Davlatov','Borisov','done'),
+	('The Last Wish','Azbuka',379,'2015-10-25','SPB','Al Capone','Borisov','done'),
+	('The Road','AST',379,'2015-10-27','SPB','Al Capone','Amanbaeva','done'),
+	('A Clockwork Orange','AST',180,'2015-08-25','SPB','Davidov','Bodrova','done'),	
+	('Brave New Wordl','Exmo',300,'2015-08-27','SPB','Davlatov','Borisov','done'),
+	('1984','AST',200,'2015-11-02','SPB','Davidov','Borisov','done'),
+	('Billy Milligan','Exmo',249,'2015-11-05','SPB','Davlatov','Borisov','done');
+
+create table Orders (customer char(20) NOT NULL,Nproduct char(50) NOT NULL,publishing char(20) NOT NULL,№order INT AUTO_INCREMENT NOT NULL,address char(100) NOT NULL,price INT UNSIGNED NOT NULL,DATE date NOT NULL,status char(10) NOT NULL, PRIMARY KEY(№order));
+insert into Orders(customer,Nproduct,publishing,address,price,date,status) values
+	('Samoilov','Red Dragon','AST','Kovrov',500,'2015-10-19','done'),
+	('Kirilova','We','EXMO','Rostov',213,'2015-08-08','done'),
+	('Bondar','The Road','AST','Chelabinsk',450,'2015-09-09','done'),
+	('Borisov','Sword of Destiny','Exmo','SPB',599,'2015-08-01','done'),
+	('Borisov','Fahrenheit 451','Azbuka','SPB',451,'2015-08-02','done'),
+   	('Ivanov','Idiot','Exmo','Moskva',217,'2015-08-03','done'),
+	('Ivanov','Don Quijote','Azbuka','Moskva',171,'2015-08-03','done'),
+	('Ivanov','La Nausee','AST','Moskva',217,'2015-08-03','done'),	
+	('Borisov','Das Parfum','Azbuka','SPB',142,'2015-08-10','done'),
+	('Borisov','Ham on Rye','Exmo','SPB',148,'2015-08-12','done'),
+	('Nedobuga','Red Dragon','AST','Kovrov',500,'2015-11-01','done'),
+	('Borisov','The Great Gatsby','Azbuka','SPB',105,'2015-09-07','done'),
+	('Kirilova','Fahrenheit 451','Azbuka','Rostov',451,'2015-10-15','done'),
+	('Borisov','The Road','AST','SPB',450,'2015-08-27','done'),
+	('Borisov','The Godfather','Exmo','SPB',181,'2015-10-25','done'),
+	('Borisov','The Last Wish','Azbuka','SPB',379,'2015-10-25','done'),
+	('Amanbaeva','The Road','AST','SPB',379,'2015-10-27','done'),
+	('Bodrova','A Clockwork Orange','AST','SPB',180,'2015-08-25','done'),	
+	('Borisov','Brave New Wordl','Exmo','SPB',300,'2015-08-27','done'),
+	('Borisov','1984','AST','SPB',200,'2015-11-02','done'),
+	('Borisov','Billy Milligan','Exmo','SPB',249,'2015-11-05','done');
+create table Customers (login char(30),password char(30));
+insert into Customers(login,password) values
+	('Amanbaeva','Amanbaeva'),
+	('Bodrova','Bodrova'),
+	('Bondar','Bondar'),
+	('Borisov','Borisov'),
+	('Baranov','Baranov'),
+	('Ivanov','Ivanov'),
+	('Dang','Dang'),
+	('Than','Than'),
+	('Zhirnov','Zhirnov'),
+	('Gorodnichev','Gorodnichev'),
+	('Yudina','Yudina'),
+	('Kirilova','Kirilova'),
+	('Kutergina','Kutergina');
+create table Couriers (login char(30),password char(30));
+insert into Couriers(login,password) values
+	('Davidov','Davidov'),
+	('Al_Capone','Al_Capone'),
+	('Davlatov','Davlatov');
+create table Admin (login char(30),password char(30));
+insert into Admin(login,password) values
+	('Borisov_Boris_Borisovich','berik9510222');
+//////////////////////////////////////
+Запросы
++1)Выбрать заказчиков которые покупают продукцию только одного издательства (not exists) 
+select distinct customer,publishing from Orders a where not exists(select*from Orders b where b.customer=a.customer and b.publishing<>a.publishing);	
++2)Выбрать издательство книги, которое распродается быстрее всего за определённый промежуток времени.
+select publishing,COUNT(publishing),SUM(price) from Orders where(date BETWEEN '2015-08-08' AND '2015-11-01') group by publishing order by SUM(price) desc limit 1;
++3)Выбрать курьеров которые получают прибыль с заказов выше среднего
+select a.released,SUM(a.price) from Bill a group by released having SUM(a.price)>(select AVG(asset) from (select a.released, SUM(a.price) AS asset from Bill a group by a.released) inner_query);
++4)Повышать книгам рейтинг 3м если они продаются за определённый промежуток времени больше других
+update Storage set rating=rating+10 where(Nbook IN (select Nproduct from Orders where (date BETWEEN '2015-08-02' AND '2015-11-01')GROUP BY Nproduct order by SUM(price) desc))limit 3;
++5)Понижать последним 3 книгам рейтинг если они продаются за определённый промежуток времени меньше других
+update Storage set rating=rating-10 where(Nbook IN (select Nproduct from Orders where (date BETWEEN '2015-08-02' AND '2015-11-01')GROUP BY Nproduct order by SUM(price)))limit 3;
++6)Вывести 3 самых активных заказчиков за определенное время
+select customer,COUNT(customer),SUM(price) from Orders where(date BETWEEN '2015-08-08' AND '2015-11-01')group by customer order by SUM(price) desc limit 3;
++7)Выбрать заказчика, сделавшего за определенный промежуток времени более 10 заказов 
+select customer,COUNT(customer) from  Orders where  (date between '2015-08-01' and '2015-11-05') group by customer HAVING COUNT(customer)>10;
++8)Выбрать заказчика,сделавшего заказы продукции нескольких издательств
+select distinct customer,publishing from Orders a where exists(select*from Orders b where b.customer=a.customer and b.publishing<>a.publishing);
++9)Выбрать книги, которые фигурировали в списке наиб-е покупаемых >1
+select Nproduct, COUNT(Nproduct) from Orders group by Nproduct HAVING COUNT(Nproduct)>1;
++10)Выбрать три дня в году, когда больше всего продаж.
+select date,COUNT(date) from Bill group by date order by COUNT(date) desc limit 3;	
+//////////////////////
+Borisov_Boris_Borisovich
+show databases;
+show table;
+describe Storage;
+select*from Storage; 
+drop table Storage; 
+delete from Storage where N=10; 
+ALTER TABLE `table_name` ADD `vcolumn_name` INT( 11 ) NOT NULL; 
+ALTER TABLE table_name DROP COLUMN name_colum
+alter table Orders change price sum int// переименовать столбцы
+UPDATE Customers SET rating = 200; //изменить все значения столбца
+UPDATE Customers SET rating = 200 WHERE snum = 1001;// определенное
+select*from Storage order by price desc // сорт убыв-е
+select AVG(asset) from (select a.released, SUM(a.price) AS asset from Bill a group by a.released) inner_query; AVG(SUM)
+

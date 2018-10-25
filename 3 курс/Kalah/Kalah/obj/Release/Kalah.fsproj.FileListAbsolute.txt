@@ -1,0 +1,18 @@
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\Kalah.exe.config
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\Kalah.XML
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\Kalah.exe
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\Kalah.pdb
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\FSharp.Core.dll
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\FSharp.Core.xml
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Release\ru\FSharp.Core.resources.dll
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\obj\Release\Kalah.exe
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\obj\Release\Kalah.pdb
+E:\Kalah\Kalah\bin\Release\Kalah.exe.config
+E:\Kalah\Kalah\bin\Release\Kalah.XML
+E:\Kalah\Kalah\bin\Release\Kalah.exe
+E:\Kalah\Kalah\bin\Release\Kalah.pdb
+E:\Kalah\Kalah\bin\Release\FSharp.Core.dll
+E:\Kalah\Kalah\bin\Release\FSharp.Core.xml
+E:\Kalah\Kalah\bin\Release\ru\FSharp.Core.resources.dll
+E:\Kalah\Kalah\obj\Release\Kalah.exe
+E:\Kalah\Kalah\obj\Release\Kalah.pdb

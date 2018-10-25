@@ -1,0 +1,24 @@
+﻿Сборка начата 11.09.2015 22:47:55.
+     1>Проект "D:\Курсовые\Курсовая работа(Борисов алгебра)\SPH\SPH.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt longInt.cpp SPH.cpp
+         longInt.cpp
+     1>longInt.cpp(137): warning C4244: =: преобразование "__int64" в "long", возможна потеря данных
+     1>longInt.cpp(278): warning C4244: =: преобразование "__int64" в "long", возможна потеря данных
+     1>longInt.cpp(295): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>longInt.cpp(659): warning C4244: =: преобразование "__int64" в "long", возможна потеря данных
+     1>longInt.cpp(661): warning C4244: =: преобразование "__int64" в "long", возможна потеря данных
+         SPH.cpp
+     1>SPH.cpp(56): warning C4244: инициализация: преобразование "ull" в "int", возможна потеря данных
+     1>SPH.cpp(125): warning C4244: аргумент: преобразование "ull" в "int", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Курсовые\Курсовая работа(Борисов алгебра)\SPH\Release\SPH.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Курсовые\Курсовая работа(Борисов алгебра)\SPH\Release\SPH.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Курсовые\Курсовая работа(Борисов алгебра)\SPH\Release\SPH.lib" /MACHINE:X86 /SAFESEH Release\longInt.obj
+         Release\SPH.obj
+         Создание кода
+         Создание кода завершено
+         SPH.vcxproj -> D:\Курсовые\Курсовая работа(Борисов алгебра)\SPH\Release\SPH.exe
+     1>Сборка проекта "D:\Курсовые\Курсовая работа(Борисов алгебра)\SPH\SPH.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:09.95

@@ -1,0 +1,1 @@
+double lagrange(int n,double * x, double * y, double x_);

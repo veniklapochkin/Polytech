@@ -1,0 +1,11 @@
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\bin\Debug\Bookkeeping.exe.config
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\bin\Debug\Bookkeeping.exe
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\bin\Debug\Bookkeeping.pdb
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.csprojResolveAssemblyReference.cache
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.Properties.Resources.resources
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.csproj.GenerateResource.Cache
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.exe
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.pdb
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.MainWindow.resources
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\obj\Debug\Bookkeeping.authentification.resources
+c:\users\влад\documents\visual studio 2013\Projects\Bookkeeping\Bookkeeping\bin\Debug\Oracle.DataAccess.dll

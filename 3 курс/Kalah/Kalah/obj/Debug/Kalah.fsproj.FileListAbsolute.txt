@@ -1,0 +1,9 @@
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\Kalah.exe.config
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\Kalah.XML
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\Kalah.exe
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\Kalah.pdb
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\FSharp.Core.dll
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\FSharp.Core.xml
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\obj\Debug\Kalah.exe
+C:\Users\Влад\Documents\Visual Studio 2013\Projects\Kalah\Kalah\obj\Debug\Kalah.pdb

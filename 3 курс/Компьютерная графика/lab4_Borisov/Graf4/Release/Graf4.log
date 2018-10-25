@@ -1,0 +1,374 @@
+﻿  functions.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(102): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(102): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(102): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(107): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(107): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(107): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(169): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(169): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(169): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(185): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(185): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(185): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(188): error C2144: синтаксическая ошибка: перед "char" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(188): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(189): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(189): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(189): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(199): error C2144: синтаксическая ошибка: перед "char" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(199): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(199): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(273): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(273): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(273): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(280): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(280): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(280): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(294): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(294): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(294): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(303): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(303): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(303): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(313): error C2144: синтаксическая ошибка: перед "wchar_t" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(313): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(313): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(326): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(326): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(326): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(330): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(330): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(330): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(598): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(598): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(599): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(599): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(600): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(600): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(602): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(602): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(604): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(604): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(605): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(605): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(606): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(606): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(607): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(607): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(609): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(609): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(611): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(611): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(613): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(613): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(615): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(615): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(739): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(739): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(739): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(792): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(792): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(792): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(816): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(816): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(816): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(830): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(830): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(830): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errno_t"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(311): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(311): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(311): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(318): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(318): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(318): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(321): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(321): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(321): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(330): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(330): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(330): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(332): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(332): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(332): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(335): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(335): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(335): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(336): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(336): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(336): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(359): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(359): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(359): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_ARGLIST_EX"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "_vsnprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2199: синтаксическая ошибка: обнаружен "char (" в глобальной области видимости (объявление действительно требовалось?)
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2062: тип "char" не требуется
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(366): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(366): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(366): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_ARGLIST"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "vsprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C2365: sprintf: переопределение; предыдущим определением было "переменная данных"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): note:  см. объявление "sprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(404): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(404): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(404): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(407): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(407): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(407): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(416): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(416): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(416): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(471): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(471): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(471): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(482): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(482): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(482): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(484): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(484): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(484): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_ARGLIST_EX"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "_vsnwprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2199: синтаксическая ошибка: обнаружен "wchar_t (" в глобальной области видимости (объявление действительно требовалось?)
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2062: тип "wchar_t" не требуется
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(516): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(516): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(516): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(526): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(526): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(526): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string.h(98): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): fatal error C1003: число ошибок превышает 100; остановка компиляции
+  main.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(311): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(311): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(311): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(318): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(318): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(318): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(321): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(321): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(321): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(330): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(330): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(330): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(332): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(332): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(332): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(335): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(335): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(335): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(336): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(336): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(336): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(359): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(359): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(359): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_ARGLIST_EX"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "_vsnprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2199: синтаксическая ошибка: обнаружен "char (" в глобальной области видимости (объявление действительно требовалось?)
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(363): error C2062: тип "char" не требуется
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(366): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(366): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(366): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_ARGLIST"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "vsprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): error C2365: sprintf: переопределение; предыдущим определением было "переменная данных"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(371): note:  см. объявление "sprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(404): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(404): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(404): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(407): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(407): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(407): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(416): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(416): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(416): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(471): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(471): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(471): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(482): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(482): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(482): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(484): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(484): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(484): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_ARGLIST_EX"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "_vsnwprintf"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2199: синтаксическая ошибка: обнаружен "wchar_t (" в глобальной области видимости (объявление действительно требовалось?)
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(488): error C2062: тип "wchar_t" не требуется
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(516): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(516): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(516): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(526): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(526): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(526): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(528): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(544): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_ARGLIST_EX"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(544): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "_swprintf_s"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(544): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(544): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(544): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "vswprintf_s"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(544): error C2733: "vswprintf_s": вторая С-компоновка перегруженной функции не допускается
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(475): note:  см. объявление "vswprintf_s"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(545): warning C4003: не хватает фактических параметров для макроопределения "__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_ARGLIST_EX"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(545): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "__vswprintf_l"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(545): error C2143: синтаксическая ошибка: отсутствие "," перед "*"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(545): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(545): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "_vswprintf_s_l"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(545): error C2733: "_vswprintf_s_l": вторая С-компоновка перегруженной функции не допускается
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(519): note:  см. объявление "_vswprintf_s_l"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(40): error C3861: _crt_va_start: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(42): error C3861: _crt_va_end: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(64): error C3861: _crt_va_start: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(66): error C3861: _crt_va_end: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(88): error C3861: _crt_va_start: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(89): error C3861: _vswprintf: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(90): error C3861: _crt_va_end: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(99): error C3861: _vswprintf: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(108): error C3861: _crt_va_start: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(109): error C2660: __vswprintf_l: функция не принимает 4 аргументов
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(110): error C3861: _crt_va_end: идентификатор не найден
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\swprintf.inl(119): error C2660: __vswprintf_l: функция не принимает 4 аргументов
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(585): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(585): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(585): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(587): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(587): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(587): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(590): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(590): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(590): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(591): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(591): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(591): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(595): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(595): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(595): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(597): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(597): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(597): error C2086: int _CRTIMP_ALTERNATIVE: переопределение
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(309): note:  см. объявление "_CRTIMP_ALTERNATIVE"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(30): warning C4005: _FPOSOFF: изменение макроопределения
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdio.h(146): note: см. предыдущее определение "_FPOSOFF"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(55): error C2039: snprintf: не является членом "`global namespace'"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(55): error C2873: snprintf: использование символа в "using"-объявлении не допускается
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(56): error C2039: vfscanf: не является членом "`global namespace'"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(56): error C2873: vfscanf: использование символа в "using"-объявлении не допускается
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(56): error C2039: vscanf: не является членом "`global namespace'"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(56): error C2873: vscanf: использование символа в "using"-объявлении не допускается
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(56): error C2039: vsscanf: не является членом "`global namespace'"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cstdio(56): error C2873: vsscanf: использование символа в "using"-объявлении не допускается
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(343): error C2988: неопознанное объявление или определение шаблона
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(343): error C2143: синтаксическая ошибка: отсутствие ")" перед "("
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(343): error C2365: __countof_helper: переопределение; предыдущим определением было "функция"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime.h(240): note:  см. объявление "__countof_helper"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(343): error C2059: синтаксическая ошибка: )
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(343): error C2059: синтаксическая ошибка: [
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(345): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(598): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(598): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(599): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(599): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(600): error C2144: синтаксическая ошибка: перед "void" требуется ";"
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdlib.h(600): fatal error C1003: число ошибок превышает 100; остановка компиляции

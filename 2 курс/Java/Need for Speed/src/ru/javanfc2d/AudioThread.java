@@ -1,0 +1,18 @@
+package ru.javanfc2d;
+
+
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+public class AudioThread implements Runnable {
+
+
+	public void run() {
+		try {
+			Player	player = new Player(getClass().getClassLoader().getResourceAsStream("Music/Л.В. Бетховен - Симфония 9 (стихи Ф.Шиллера) - Ode an die Freude (Ода к радости)1.mp3"));
+			player.play();
+		} catch (JavaLayerException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

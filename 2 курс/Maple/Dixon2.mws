@@ -1,0 +1,104 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Warning" -1 7 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 0 
+0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 1003 "with(LinearAlgebra
+);\nDixon := proc (U,V) \nN := abs(U);\nB := abs(V);\nu := 1; h := 1; \+
+p := \{2\};A:=\{\}; \nif isprime(N) then \nreturn N; \nfi; \nif (N mod
+ p[h] = 0) then \nreturn p[h];\nfi;\nwhile (nextprime(p[h]) <= B) do \+
+\np := p union \{nextprime(p[h])\}; \nh := h+1; \nod; \nwhile (numelem
+s(A) < (h+1)) do\nb := rand() mod (N-1);\nif (b <= 1) then \nb := 2; \+
+\nfi;\ng := gcd(b,N);\nif (g > 1) then\nreturn g; \nfi;\na := b^2 mod \+
+N;\ntemp := Matrix(1,h);\nfor i from 1 to h do\ntemp[1,i] := 0;\nwhile
+ ((a mod p[i]) = 0) do\ntemp[1,i] := temp[1,i] + 1;\na := a/p[i];\nod;
+ od;\nif (a = 1) then\nA := A union \{[b,temp]\}; \nfi;\nod;\nC := Mat
+rix(h+1,h);\nfor i from 1 to h+1 do\nfor j from 1 to h do\nC[i,j] := A
+[i][2][1,j];\nod; \nod;\nC := Transpose(C);\nx := (Nullspace(C) mod 2)
+[1];\ny := Matrix(1,h);\ny := (C.x)*(1/2);\ns := 1;\nfor i from 1 to h
++1 do\nif (x[i] = 1) then s :=s*A[i][1]; fi;\nod;\nt := 1;\nfor k from
+ 1 to h do\nt := t * (p[k]^y[k]);\nod;\ng := gcd(s+t,N);\nif ((g <> 1)
+ and (g <> abs(U))) \nthen return g;\nelse return \"Error\";\nfi;\nend
+ proc;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7^s%#&xG%$AddG%(AdjointG%3Ba
+ckwardSubstituteG%+BandMatrixG%&BasisG%-BezoutMatrixG%/BidiagonalFormG
+%-BilinearFormG%%CAREG%5CharacteristicMatrixG%9CharacteristicPolynomia
+lG%'ColumnG%0ColumnDimensionG%0ColumnOperationG%,ColumnSpaceG%0Compani
+onMatrixG%5CompressedSparseFormG%0ConditionNumberG%/ConstantMatrixG%/C
+onstantVectorG%%CopyG%2CreatePermutationG%-CrossProductG%%DAREG%-Delet
+eColumnG%*DeleteRowG%,DeterminantG%)DiagonalG%/DiagonalMatrixG%*Dimens
+ionG%+DimensionsG%+DotProductG%6EigenConditionNumbersG%,EigenvaluesG%-
+EigenvectorsG%&EqualG%2ForwardSubstituteG%.FrobeniusFormG%9FromCompres
+sedSparseFormG%.FromSplitFormG%4GaussianEliminationG%2GenerateEquation
+sG%/GenerateMatrixG%(GenericG%2GetResultDataTypeG%/GetResultShapeG%5Gi
+vensRotationMatrixG%,GramSchmidtG%-HankelMatrixG%,HermiteFormG%3Hermit
+ianTransposeG%/HessenbergFormG%.HilbertMatrixG%2HouseholderMatrixG%/Id
+entityMatrixG%2IntersectionBasisG%+IsDefiniteG%-IsOrthogonalG%*IsSimil
+arG%*IsUnitaryG%2JordanBlockMatrixG%+JordanFormG%1KroneckerProductG%(L
+A_MainG%0LUDecompositionG%-LeastSquaresG%,LinearSolveG%.LyapunovSolveG
+%$MapG%%Map2G%*MatrixAddG%2MatrixExponentialG%/MatrixFunctionG%.Matrix
+InverseG%5MatrixMatrixMultiplyG%+MatrixNormG%,MatrixPowerG%5MatrixScal
+arMultiplyG%5MatrixVectorMultiplyG%2MinimalPolynomialG%&MinorG%(Modula
+rG%)MultiplyG%,NoUserValueG%%NormG%*NormalizeG%*NullSpaceG%3OuterProdu
+ctMatrixG%*PermanentG%&PivotG%*PopovFormG%1ProjectionMatrixG%0QRDecomp
+ositionG%-RandomMatrixG%-RandomVectorG%%RankG%6RationalCanonicalFormG%
+6ReducedRowEchelonFormG%$RowG%-RowDimensionG%-RowOperationG%)RowSpaceG
+%-ScalarMatrixG%/ScalarMultiplyG%-ScalarVectorG%*SchurFormG%/SingularV
+aluesG%*SmithFormG%*SplitFormG%8StronglyConnectedBlocksG%*SubMatrixG%*
+SubVectorG%)SumBasisG%0SylvesterMatrixG%/SylvesterSolveG%/ToeplitzMatr
+ixG%&TraceG%*TransposeG%0TridiagonalFormG%+UnitVectorG%2VandermondeMat
+rixG%*VectorAddG%,VectorAngleG%5VectorMatrixMultiplyG%+VectorNormG%5Ve
+ctorScalarMultiplyG%+ZeroMatrixG%+ZeroVectorG%$ZipG" }}{PARA 7 "" 1 "
+" {TEXT -1 63 "Warning, `N` is implicitly declared local to procedure \+
+`Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `B` is implicitly d
+eclared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "W
+arning, `u` is implicitly declared local to procedure `Dixon`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `h` is implicitly declared local
+ to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `p` i
+s implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" 
+{TEXT -1 63 "Warning, `A` is implicitly declared local to procedure `D
+ixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `b` is implicitly dec
+lared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "War
+ning, `g` is implicitly declared local to procedure `Dixon`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `a` is implicitly declared local
+ to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 66 "Warning, `temp
+` is implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 
+"" {TEXT -1 63 "Warning, `i` is implicitly declared local to procedure
+ `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `C` is implicitly \+
+declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "
+Warning, `j` is implicitly declared local to procedure `Dixon`\n" }}
+{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `x` is implicitly declared local
+ to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `y` i
+s implicitly declared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" 
+{TEXT -1 63 "Warning, `s` is implicitly declared local to procedure `D
+ixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "Warning, `t` is implicitly dec
+lared local to procedure `Dixon`\n" }}{PARA 7 "" 1 "" {TEXT -1 63 "War
+ning, `k` is implicitly declared local to procedure `Dixon`\n" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&DixonGf*6$%\"UG%\"VG64%\"NG%\"BG%\"
+uG%\"hG%\"pG%\"AG%\"bG%\"gG%\"aG%%tempG%\"iG%\"CG%\"jG%\"xG%\"yG%\"sG%
+\"tG%\"kG6\"F<C8>8$-%$absG6#9$>8%-FA6#9%>8&\"\"\">8'FK>8(<#\"\"#>8)<\"
+@$-%(isprimeG6#F?OF?@$/-%$modG6$F?&FO6#FM\"\"!OFin?(F<FKFKF<1-%*nextpr
+imeG6#FinFEC$>FO-%&unionG6$FO<#F_o>FM,&FMFKFKFK?(F<FKFKF<2-%)numelemsG
+6#FSFioC*>8*-Fgn6$-%%randGF<,&F?FKFK!\"\"@$1FapFK>FapFQ>8+-%$gcdG6$Fap
+F?@$2FKF\\qOF\\q>8,-Fgn6$*$)FapFQFKF?>8--%'MatrixG6$FKFM?(8.FKFKFM%%tr
+ueGC$>&Fjq6$FKF_rF[o?(F<FKFKF</-Fgn6$Fdq&FO6#F_rF[oC$>Fcr,&FcrFKFKFK>F
+dq*&FdqFKFirFgp@$/FdqFK>FS-Feo6$FS<#7$FapFjq>8/-F\\r6$FioFM?(F_rFKFKFi
+oF`r?(80FKFKFMF`r>&Fhs6$F_rF]t&&&FSFjr6#FQ6$FKF]t>Fhs-_%.LinearAlgebra
+G%*TransposeG6#Fhs>81&-Fgn6$-%*NullspaceGF[uFQ6#FK>82F[r>Feu,$*&#FKFQF
+K-%\".G6$%#AiGF]uFKFK>83FK?(F_rFKFKFioF`r@$/&F]uFjrFK>F_v*&F_vFK&FctFc
+uFK>84FK?(85FKFKFMF`r>Fhv*&FhvFK)&FO6#Fjv&FeuF_wFK>F\\q-F^q6$,&F_vFKFh
+vFKF?@%30F\\qFK0F\\qF@OF\\qOQ&ErrorF<F<F<F<" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 14 "Dixon(2183,9);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+\"#P" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "Dixon(2183,4);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#f" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "Dixon(34274,534);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+\"\"#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "Dixon(256027,30);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$4&" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 13 "Dixon(31,45);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"
+#J" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "0 1 0" 0 
+}{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

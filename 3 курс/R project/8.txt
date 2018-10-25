@@ -1,0 +1,49 @@
+e <- c(	-1.7208785,  1.4779475, -0.6021449, -0.1178886,  0.5788849,  1.5967986,
+	1.1178347, -1.0121218,  0.8302308,  0.5424034,  0.6944921,  1.5018430,
+	-0.3888735,  1.9058254,  0.3600052, -1.1087474, -0.5457395, -0.6236142,
+	0.1627370,  0.6218656,  0.4606994)
+x <- seq(-2, 2, by = 0.2)
+y <- x + 1 + e ## y = a*x + b + e
+ym <- x + 1 ## y = a*x + b
+
+## simple linear regression
+slr_data <- data.frame(x = x, y = y)
+slr <- lm(y ~ x, data = slr_data)
+b_slr <- slr$coefficients[1]
+a_slr <- slr$coefficients[2]
+
+y_n <- y
+y_n[1] <- y_noise[1] + 10
+## simple linear regression with noise
+slr_n_data <- data.frame(x = x, y = y_n)
+slr_n <- lm(y ~ x, data = slr_n_data)
+b_slr_n <- slr_n$coefficients[1]
+a_slr_n <- slr_n$coefficients[2]
+
+## least absolute deviations with noise
+lad_n_data <- data.frame(x = x, y = y_n)
+lad_n <- lad(y ~ x, data = lad_n_data)
+b_lad_n <- lad_n$coefficients[1]
+a_lad_n <- lad_n$coefficients[2]
+
+## results
+a_slr
+b_slr
+plot(x,y)
+lines(x,ym)
+lines(x, a_slr*x + b_slr, col="red")
+text(c(1.7,1),c(2.3,2.7),labels=c("model","eval"))
+
+a_slr_n
+b_slr_n
+plot(x,y_n,ylab="y")
+lines(x,ym)
+lines(x, a_slr_n*x + b_slr_n, col="red")
+text(c(-1.8,-2),c(0,3.7),labels=c("model","eval"))
+
+a_lad_n
+b_lad_n
+plot(x,y_n,ylab="y")
+lines(x,ym)
+lines(x, a_lad_n*x + b_lad_n, col="red")
+text(c(-1.9,-2),c(-1.2,1.2),labels=c("model","eval"))

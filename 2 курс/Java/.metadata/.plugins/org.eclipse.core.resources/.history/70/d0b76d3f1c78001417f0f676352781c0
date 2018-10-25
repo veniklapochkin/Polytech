@@ -1,0 +1,20 @@
+package ru.javanfc2d;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+public class AudioThread implements Runnable {
+
+
+	public void run() {
+		try {
+		FileInputStream stream = new FileInputStream(getClass().getClassLoader().getResource("song.mp3").getPath());
+			Player	p = new Player (stream);
+		p.play();
+		} catch (FileNotFoundException | JavaLayerException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,57 @@
+package ru.java2d;
+
+import java.awt.Image;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+
+import ru.java2d.Location.MyKeyAdapter;
+
+
+public class Place extends JPanel implements ActionListener {
+	
+	Timer mainTimer = new Timer(200, this);
+	public Location() {
+		mainTimer.start();
+		addKeyListener(new MyKeyAdapter());
+		setFocusable(true);
+	}
+	
+	Image png2 = new ImageIcon("models/Place.png").getImage();
+	int x;
+	int y;
+	int s;
+	int v;
+	int place1;
+
+public void move() {
+	s += v;
+	place1 -= v;
+
+}
+public void keyPressed(KeyEvent e) { 
+	  int key = e.getKeyCode();
+	  if (key==KeyEvent.VK_RIGHT){
+		//  a=1;
+		  x--;
+		  
+	  }
+	  if (key==KeyEvent.VK_LEFT){
+		// a=-1;
+		  x++;
+		  
+	  }
+	  
+
+}
+
+public void keyReleased(KeyEvent e) {  
+	  int key = e.getKeyCode();
+	  if (key==KeyEvent.VK_LEFT||key==KeyEvent.VK_RIGHT){
+		  //x=40;
+		 // a=0;
+	  }
+}}

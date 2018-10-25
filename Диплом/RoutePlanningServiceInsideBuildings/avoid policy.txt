@@ -1,0 +1,9 @@
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files "D:\Cloud Mail.Ru\RoutePlanningServiceInsideBuildings\index.html"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+google-chrome --allow-file-access-from-files file:///home/venik-lapochkin/Cloud%20Mail.ru/RoutePlanningServiceInsideBuildings/index.html
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+"C:\Program Files\Opera\launcher.exe" --allow-file-access-from-files "D:\Cloud Mail.Ru\RoutePlanningServiceInsideBuildings\index.html"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+"C:\Program Files (x86)\Internet Explorer\iexplore.exe" --allow-file-access-from-files "D:\Cloud Mail.Ru\RoutePlanningServiceInsideBuildings\index.html"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+"C:\Users\Vlad\AppData\Local\Yandex\YandexBrowser\Application\browser.exe" --allow-file-access-from-files "D:\Cloud Mail.Ru\RoutePlanningServiceInsideBuildings\index.html"

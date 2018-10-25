@@ -1,0 +1,24 @@
+package ru.javanfc2d;
+
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+
+public class Enemy{
+	int x;
+	int y;
+	int v;
+	Image png = new ImageIcon("models/Car2.png").getImage();
+	Road road;
+	
+	public Enemy(int x,int y, int v, Road road){
+		this.x =x;
+		this.y =y;
+		this.v = v;
+		this.road = road;
+		
+	}
+	public void move(){
+		x=x-road.c.v+v;
+	}
+}

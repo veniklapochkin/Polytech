@@ -1,0 +1,64 @@
+package ru.javanfc2d;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+ class Game extends JFrame {
+
+	 public Game() {
+	          super("Menu");
+	          createGUI();
+	 }
+	 private JTextField textField;
+	public void createGUI() {
+      //  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
+
+        JButton button1 = new JButton("New Game");
+        button1.setActionCommand("GO!");
+        panel.add(button1);
+
+        JButton button2 = new JButton("Exit");
+        button2.setActionCommand("Goodbuy!");
+        panel.add(button2);
+        textField = new JTextField();
+        textField.setColumns(23);
+        panel.add(textField);
+
+        ActionListener actionListener = new TestActionListener();
+         
+        button1.addActionListener(actionListener);
+        button2.addActionListener(actionListener);
+        getContentPane().add(panel);
+        setPreferredSize(new Dimension(320, 100));
+   }
+
+        public class TestActionListener implements ActionListener {
+            public void actionPerformed(ActionEvent e) {
+                 textField.setText(e.getActionCommand());
+            }
+       }
+        
+	public static void main(String[] args) {
+		
+		JFrame f = new JFrame("Need for Speed");
+        Game frame = new Game ();
+        JFrame.setDefaultLookAndFeelDecorated(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(1366, 768);
+		f.add(new Road());
+		f.setVisible(true); // cделать видимым
+		frame.setVisible(true); 
+        frame.pack();
+        frame.setLocationRelativeTo(null); // по центру
+	}
+}

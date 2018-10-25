@@ -1,0 +1,11 @@
+package ru.javanfc2d;
+
+public class AudioThread implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Автоматически созданная заглушка метода
+
+	}
+
+}

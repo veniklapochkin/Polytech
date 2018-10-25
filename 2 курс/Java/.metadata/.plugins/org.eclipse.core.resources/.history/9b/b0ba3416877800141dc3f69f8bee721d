@@ -1,0 +1,128 @@
+package ru.javanfc2d;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+
+public class Road extends JPanel implements ActionListener, Runnable {
+
+	Timer mainTimer = new Timer(20, this); // каждые 20 мл сек обновл
+
+	Image png = new ImageIcon(getClass().getClassLoader().getResource("models/Road.png")).getImage();
+	Car c = new Car();
+	Thread enemiesFactory = new Thread(this); // фабрика врагов, враги созд пост
+												// в сл промежуток времени
+	Thread audioThread = new Thread(new AudioThread());
+	
+	Thread stopWatch = new Thread(new StopThread());
+	
+	List<Enemy> enemies = new ArrayList<Enemy>(); // коллекци€ врагов, где они хран€тс€
+	public Road() {
+		mainTimer.start();
+		enemiesFactory.start(); // запуск потока
+		audioThread.start();
+		stopWatch.start();
+		addKeyListener(new MyKeyAdapter());
+		setFocusable(true);
+	}
+
+	private class MyKeyAdapter extends KeyAdapter {
+		public void keyPressed(KeyEvent e) {
+			c.keyPressed(e);
+		}
+
+		public void keyReleased(KeyEvent e) {
+			c.keyReleased(e);
+		}
+
+	}
+
+	public void paint(Graphics g) {
+		g = (Graphics2D) g;
+		g.drawImage(png, c.layer1, 0, null);
+		g.drawImage(png, c.layer2, 0, null); // второй слой
+		g.drawImage(c.png, c.x, c.y, null);
+		
+		double v = (50/Car.MAX_V)*c.v;
+		int seconds =0;
+		int minutes =0;
+		g.setColor(Color.YELLOW);
+		Font font = new Font("Times New Roman",Font.ITALIC,20);
+		g.setFont(font);
+		g.drawString("—корость: "+v+"км\\ч",10, 15);
+		g.drawString("¬рем€  " +minutes+ " : " +seconds+" : ", 1000, 15);
+		
+		Iterator<Enemy> i = enemies.iterator();// проходим коллекцию
+		while(i.hasNext()){
+			Enemy e = i.next();
+			if (/*e.x>=2400||*/e.x<=0){ // соперник вышел за границу 0 пикселей то удал€ем
+			//System.out.println(i);
+				i.remove();}
+			else{
+				
+			e.move();
+			g.drawImage(e.png,e.x,e.y,null);}
+		}
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		c.move();
+		repaint();
+		testCollisionWithEnemies(); //провер€ем каждые 20 мл сек столкновени€ с врагами 
+		testWin();	
+	//	stopwatch();
+		//System.out.println(enemies.size()); // вывод в консоли кол-ва  врагов и их удаление 
+		
+	}
+
+	public void testWin(){
+		if (c.s>= 20000){
+			
+			JOptionPane.showMessageDialog(null,"¬ы выиграли!");
+			System.exit(0);
+	}}
+	public void	testCollisionWithEnemies()
+	{
+		Iterator<Enemy> i = enemies.iterator();
+		while(i.hasNext()){
+			Enemy e =i.next();
+			if (c.getRect().intersects(e.getRect())){ // провер€ем стокновени€ с игроком (коллекцию)
+				//i.remove();
+			JOptionPane.showMessageDialog(null,"¬ы проиграли!");
+			System.exit(1);
+			}
+		}
+	}
+	
+	
+	public void run() { // метод который будет создавать бесконечное кол-во
+						// врагов, со сл задержкой
+		while (true) {
+			Random rand = new Random();
+			try {
+				Thread.sleep(rand.nextInt(2000));
+				enemies.add(new Enemy(1400,rand.nextInt(500),rand.nextInt(10),this));
+			}// задержка на сл промежуток от 0 до 2000 (0 to 2 sec)}
+			catch (InterruptedException e) {
+				e.printStackTrace();
+
+			}
+		}
+	}
+
+}

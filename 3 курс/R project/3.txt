@@ -1,0 +1,47 @@
+u <- function(z) {
+	if (z < 0) 0
+	else 1
+}
+
+K <- function(u)
+	exp(-u^2/2)/sqrt(2*pi)
+
+com_dis <- function(x) 
+	integrate(function(t) exp(-t^2/2), -Inf, x)$value/sqrt(2*pi)
+
+to_com_dis <- function(x, set) {
+	result <- 0
+	for (i in 1:length(set))
+		result <- result + u(x - set[i])
+	result/length(set)
+}
+
+prob_dis <- function(x)
+	exp(-x^2/2)/sqrt(2*pi)
+
+kprob_dis <- function(x, h, set) {
+	result <- 0
+	for (i in 1:length(set))
+		result <- result + K((x-set[i])/h)
+	result/(length(set)*h)
+}
+
+breaks <- function(set) {
+	sortset <- sort(set)
+	h <- (ceiling(sortset[length(sortset)])-floor(sortset[1]))/5
+	c(floor(sortset[1]), floor(sortset[1]) + h, floor(sortset[1]) + 2*h, floor(sortset[1]) + 3*h, floor(sortset[1]) + 4*h, floor(sortset[1]) + 5*h)
+}
+
+n20 <- rnorm(20,0,1)
+n100 <- rnorm(100,0,1)
+h <- 0.01
+
+plot(Vectorize(com_dis),-4,4)
+plot(Vectorize(function(x) to_com_dis(x,n20)),-4,4)
+plot(Vectorize(function(x) to_com_dis(x,n100)),-4,4)
+
+plot(Vectorize(prob_dis),-4,4)
+hist(n20,breaks(n20))
+hist(n100,breaks(n100))
+plot(Vectorize(function(x) kprob_dis(x, h, n20)),-3.5,3.5)
+plot(Vectorize(function(x) kprob_dis(x, h, n100)),-3.5,3.5)

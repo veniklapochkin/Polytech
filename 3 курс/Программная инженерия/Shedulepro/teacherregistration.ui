@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teacherregistration</class>
+ <widget class="QDialog" name="teacherregistration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Teacher registration</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>80</y>
+     <width>209</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QLabel" name="llabel">
+      <property name="text">
+       <string>from 3 to 25 symbols:[a-z][0-9]</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="plabel">
+      <property name="text">
+       <string>from 3 to 25 symbols:[a-z][0-9]</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="splabel">
+      <property name="text">
+       <string>from 3 to 25 symbols:[a-z][0-9]</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="mlabel">
+      <property name="text">
+       <string>from 3 to 25 symbols:[a-z][0-9]</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>42</y>
+     <width>336</width>
+     <height>298</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string> Enter the form</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="maxLength">
+           <number>25</number>
+          </property>
+          <property name="placeholderText">
+           <string>Enter login</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="maxLength">
+           <number>25</number>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Enter password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="maxLength">
+           <number>25</number>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Repeat password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="maxLength">
+             <number>25</number>
+            </property>
+            <property name="placeholderText">
+             <string>E-Mail</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combogender">
+          <property name="maxCount">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QComboBox" name="day">
+          <property name="currentText">
+           <string/>
+          </property>
+          <property name="maxCount">
+           <number>31</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="month"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="year"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Cancel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Ok</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="Status">
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
